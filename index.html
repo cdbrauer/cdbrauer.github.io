@@ -25,22 +25,33 @@
     </nav>
     <div id="main-menu">
         <div class="nav-spacer">&nbsp;</div>
-        <a>Research</a>
-        <a>Startups</a>
-        <a>Robotics</a>
-        <a>CAD</a>
-        <a>Code</a>
-        <a>Other</a>
-        <a class="social-icon"><i class="fab fa-github"></i></a>
-        <a class="social-icon"><i class="fab fa-youtube"></i></a>
-        <a class="social-icon"><i class="fab fa-twitter"></i></a>
+        <div class="grid">
+            <div class="grid-cell-half">
+                <a>Home</a>
+                <a>Research</a>
+                <a>Startups</a>
+                <a>Projects</a>
+            </div>
+            <div class="grid-cell-half">
+                <a>Robotics</a>
+                <a>CAD</a>
+                <a>Code</a>
+                <a>Other</a>
+            </div>
+            <div class="grid-cell-full">
+                <a class="social-icon" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                <a class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
+                <a class="social-icon" title="YouTube"><i class="fab fa-youtube"></i></a>
+                <a class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
     </div>
     <section id="home">
         <div class="vertical-center bg-transparent">
             <div>&nbsp;</div> <!-- Spacer -->
             <div>
                 <h1>Cole Brauer</h1>
-                <hr class="accent-color"/>
+                <hr/>
                 <div class="subtitle">Robotics Engineer</div>
             </div>
             <div>&nbsp;</div> <!-- Spacer -->
@@ -69,37 +80,36 @@
         <div class="spacer">&nbsp;</div>
         <div class="grid">
             <div class="grid-cell-full">
-                <h2>Research</h2>
+                <h3>Research</h3>
             </div>
-            <a class="grid-cell-full grid-cell-quarter-desktop card bg-dark">
-                <img src="research/voxel1.png" class="photo" alt="voxels"/>
-                <h3>IDEAlab</h3>
+            <a href="research/index.html#idealab" class="grid-cell-full grid-cell-half-desktop card bg-dark">
+                <img src="research/idealab.png" class="photo" alt="voxels"/>
+                <h4>IDEAlab</h4>
             </a>
-            <a class="grid-cell-full grid-cell-quarter-desktop card bg-dark">
-                <img src="research/earthpod.jpg" class="photo" alt="earth pod mini"/>
-                <h3>DREAMS Lab</h3>
+            <a href="research/index.html#dreamslab" class="grid-cell-full grid-cell-half-desktop card bg-dark">
+                <img src="research/dreamslab.jpg" class="photo" alt="dreams lab projects"/>
+                <h4>DREAMS Lab</h4>
             </a>
-            <a class="grid-cell-full button bg-dark">
+            <a href="research/index.html" class="grid-cell-full button bg-dark">
                 <div class="lcr">
                     <div>Read More</div>
                     <div>&nbsp;</div>
                     <div><i class="fas fa-angle-right accent-color"></i></div>
                 </div>
             </a>
+            <hr/>
         </div>
-        <hr/>
     </section>
     <section id="startups">
-        <div class="spacer">&nbsp;</div>
         <div class="grid">
             <div class="grid-cell-full">
-                <h2>Startups</h2>
+                <h3>Startups</h3>
             </div>
             <a class="grid-cell-full grid-cell-third-desktop card bg-dark">
                 <div class="vertical-center">
                     <div>&nbsp;</div>
                     <div>
-                        <img src="img/autodev-text-logo.png" class="logo" alt="automata development"/>
+                        <img src="startups/autodev-text-logo.png" class="logo" alt="automata development"/>
                     </div>
                     <div>&nbsp;</div>
                     <div></div>
@@ -109,7 +119,7 @@
                 <div class="vertical-center">
                     <div>&nbsp;</div>
                     <div>
-                        <img src="img/map-logo.png" class="logo" alt="make-a-pede"/>
+                        <img src="startups/map-logo.png" class="logo" alt="make-a-pede"/>
                     </div>
                     <div>&nbsp;</div>
                     <div></div>
@@ -119,7 +129,7 @@
                 <div class="vertical-center">
                     <div>&nbsp;</div>
                     <div>
-                        <img src="img/ac-logo.png" class="logo" alt="accelerated cycles"/>
+                        <img src="startups/ac-logo.png" class="logo" alt="accelerated cycles"/>
                     </div>
                     <div>&nbsp;</div>
                     <div></div>
@@ -132,30 +142,29 @@
                     <div><i class="fas fa-angle-right accent-color"></i></div>
                 </div>
             </a>
+            <hr/>
         </div>
-        <hr/>
     </section>
     <section id="projects">
-        <div class="spacer">&nbsp;</div>
         <div class="grid">
             <div class="grid-cell-full">
-                <h2>Projects</h2>
+                <h3>Projects</h3>
             </div>
             <a class="grid-cell-full grid-cell-quarter-desktop card bg-dark">
                 <img src="robotics/simulink_robot.jpg" class="photo" alt="small robot"/>
                 <h4>Simulink Compatible Robot Platform</h4>
             </a>
+            <a class="grid-cell-full grid-cell-quarter-desktop card bg-dark hide-on-mobile">
+
+                <h4>CAD Highlight</h4>
+            </a>
+            <a class="grid-cell-full grid-cell-quarter-desktop card bg-dark hide-on-mobile">
+
+                <h4>Code Highlight</h4>
+            </a>
             <a class="grid-cell-full grid-cell-quarter-desktop card bg-dark">
                 <img src="other/fft.jpg" class="photo" alt="small robot"/>
                 <h4>Arduino-Based FFT Analyzer</h4>
-            </a>
-            <a class="grid-cell-full grid-cell-quarter-desktop card bg-dark hide-on-mobile">
-
-                <h4>Highlight 3</h4>
-            </a>
-            <a class="grid-cell-full grid-cell-quarter-desktop card bg-dark hide-on-mobile">
-
-                <h4>Highlight 4</h4>
             </a>
         </div>
         <div class="grid">
@@ -179,14 +188,15 @@
                 <br/>
                 <div>Other</div>
             </a>
+            <hr/>
         </div>
-        <hr/>
     </section>
     <footer>
-        <a class="social-icon"><i class="fab fa-github"></i></a>
-        <a class="social-icon"><i class="fab fa-youtube"></i></a>
-        <a class="social-icon"><i class="fab fa-twitter"></i></a>
-        <div class="fine-print">© Cole Brauer 2020</div>
+        <a class="social-icon" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+        <a class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
+        <a class="social-icon" title="YouTube"><i class="fab fa-youtube"></i></a>
+        <a class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
+        <div class="fine-print accent-light">© Cole Brauer 2020</div>
     </footer>
 </body>
 <script src="js/jquery-3.1.1.min.js"></script>
