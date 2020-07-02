@@ -1,6 +1,6 @@
 /* Variables */
 :root{
-    --color-bg: #333;
+    --color-bg: #2a2a2a;
     --color-fg: #ddd;
     --color-transparent-bg: rgba(0,0,0,0.4);
     /*--color-accent-color: #88dc00;*/
@@ -144,6 +144,11 @@ nav {
     padding-bottom: calc(2 * var(--navbar-margin));
 }
 
+#main-menu .social-icon, footer .social-icon{
+    display: inline-block;
+    padding: 0 1em calc(2 * var(--navbar-margin));
+}
+
 #menu-close{
     display: none;
 }
@@ -152,7 +157,7 @@ hr{
     width: 30%;
     border-top: 6px solid;
     margin: calc(2*var(--navbar-margin)) auto;
-    grid-column: span 6;
+    grid-column: span 12;
 }
 
 section{
@@ -187,28 +192,29 @@ section{
 
 .spacer {
     height: 1em;
-    grid-column: span 6;
+    grid-column: span 12;
 }
 
 .nav-spacer {
     height: calc(var(--navbar-font) + 2 * var(--navbar-margin));
-    grid-column: span 6;
+    grid-column: span 12;
 }
 
 /* Grids */
 .grid{
     width: 80%;
     margin: 0 auto;
-    padding-bottom: var(--navbar-margin);
+    padding-bottom: var(--grid-gap);
     display: grid;
-    --col: calc((100% - 5 * var(--grid-gap))/6);
-    grid-template-columns: var(--col) var(--col) var(--col) var(--col) var(--col) var(--col);
+    --col: calc((100% - 11 * var(--grid-gap))/12);
+    grid-template-columns: var(--col) var(--col) var(--col) var(--col) var(--col) var(--col) var(--col) var(--col) var(--col) var(--col) var(--col) var(--col);
     grid-gap: var(--grid-gap);
 }
 
-.grid-cell-full{grid-column: span 6; display: inline-block;}
-.grid-cell-half{grid-column: span 3; display: inline-block;}
-.grid-cell-third{grid-column: span 2; display: inline-block;}
+.grid-cell-full{grid-column: span 12; display: inline-block;}
+.grid-cell-half{grid-column: span 6; display: inline-block;}
+.grid-cell-third{grid-column: span 4; display: inline-block;}
+.grid-cell-quarter{grid-column: span 3; display: inline-block;}
 
 .button {
     width: calc(100% - 1em);
@@ -251,4 +257,41 @@ section{
 .fine-print{
     font-size: 0.3em;
     padding-bottom: var(--navbar-margin);
+}
+
+.hide-on-mobile{
+    display: none;
+}
+
+/* Desktop */
+@media only screen and (min-width: 1000px) {
+    :root{
+        --navbar-font: 30px;
+        --navbar-margin: 25px;
+        --arrow-font: 45px;
+
+        --corners: 10px;
+    }
+
+    .grid-cell-full-desktop{grid-column: span 12; display: inline-block;}
+    .grid-cell-half-desktop{grid-column: span 6; display: inline-block;}
+    .grid-cell-third-desktop{grid-column: span 4; display: inline-block;}
+    .grid-cell-quarter-desktop{grid-column: span 3; display: inline-block;}
+
+    body{font-size: 1.5em;}
+
+    h1{font-size: 6em;}
+
+    nav {
+        width: calc(100vw - 2 * var(--navbar-margin) - 20px);
+        padding-right: calc(var(--navbar-margin) + 20px);
+    }
+
+    hr{border-top: 4px solid;}
+
+    .fine-print{font-size: 0.6em;}
+
+    .hide-on-mobile{
+        display: initial;
+    }
 }
