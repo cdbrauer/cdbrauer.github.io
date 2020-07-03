@@ -1,11 +1,11 @@
 /* Variables */
 :root{
-    --color-bg: #2a2a2a;
+    --color-bg: #333;
     --color-fg: #ddd;
     --color-transparent-bg: rgba(0,0,0,0.4);
     /*--color-accent-color: #88dc00;*/
     --color-accent-color: #c5bd2f;
-    --color-accent-light: #5a5a5a;
+    --color-accent-light: #5c5c5c;
     --color-accent-dark: #1a1a1a;
 
     --main-bg-img: url("../img/IMG_3129_edited_s.jpg");
@@ -106,6 +106,10 @@ p{
     padding-bottom: calc(0.5 * var(--base-font));
 }
 
+.center-align{
+    text-align: center;
+}
+
 p a{
     color: var(--color-accent-color);
     text-decoration: underline;
@@ -165,7 +169,7 @@ nav .icon-spacer{
     position: relative;
     top: 0;
     padding: calc(2 * var(--grid-padding));
-    z-index: 4;
+    z-index: 1;
 }
 
 #sidebar ul{

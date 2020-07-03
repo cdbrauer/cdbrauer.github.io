@@ -3,14 +3,14 @@ function openMenu() {
     $("#main-menu").slideDown(300);
     $("#menu-open").hide();
     $("#menu-close").show();
-    $("#sidebar").animate({opacity: '0'}, 300);
+    // $("#sidebar").animate({opacity: '0'}, 300);
 }
 
 function closeMenu() {
     $("#main-menu").slideUp(300);
     $("#menu-close").hide();
     $("#menu-open").show();
-    $("#sidebar").animate({opacity: '1'}, 300);
+    // $("#sidebar").animate({opacity: '1'}, 300);
 }
 
 $(document).click(function (event) {
