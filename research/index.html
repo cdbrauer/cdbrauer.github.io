@@ -19,6 +19,8 @@
     <div>&nbsp;</div>
     <div>&nbsp;</div>
     <div>
+        <a href="../index.html"><i class="fas fa-arrow-left accent-color"></i></a>
+        <div class="icon-spacer">&nbsp;</div>
         <a href="javascript:openMenu();"><i class="fas fa-bars accent-color" id="menu-open"></i></a>
         <a href="javascript:closeMenu();"><i class="fas fa-times accent-color" id="menu-close"></i></a>
     </div>
@@ -47,73 +49,98 @@
     </div>
 </div>
 <div class="nav-spacer">&nbsp;</div>
-<section class="grid">
-    <div class="grid-cell-full">
-        <h2>Research</h2>
-        <hr/>
+<div class="lcr">
+    <div class="hide-on-mobile" id="sidebar-container"> <!-- Sidebar -->
+        <div class="bg-dark" id="sidebar">
+            <h4><a href="#research">Research</a></h4>
+            <ul>
+                <li>
+                    <a href="#idealab">IDEAlab</a>
+                    <ul>
+                        <li><a href="#voxelfuse">VoxelFuse</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#dreamslab">DREAMS Lab</a>
+                    <ul>
+                        <li><a href="#earthpod">EarthPod</a></li>
+                        <li><a href="#udrone">uDrone</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </div>
-</section>
-<section class="grid" id="idealab">
-    <div class="grid-cell-full">
-        <h3>IDEAlab</h3>
+    <div> <!-- Main Content -->
+        <section class="grid" id="research">
+            <div class="grid-cell-full">
+                <h2>Research</h2>
+                <hr/>
+            </div>
+        </section>
+        <section class="grid" id="idealab">
+            <div class="grid-cell-full">
+                <h3>IDEAlab</h3>
+            </div>
+            <div class="grid-cell-full grid-cell-twothirds-desktop" id="voxelfuse">
+                <h5>VoxelFuse</h5>
+                <p>This project seeks to provide methods and set of tools for processing, modifying, and generating 3D models
+                    that use multiple materials and fabrication processes. Areas of research include planning of fabrication
+                    steps, automatic part modification, optimization of component properties, and generation of the files and
+                    fixtures needed to produce multi-material parts. Implementation of these algorithms is done in Python using
+                    a voxel-based model representation. This work will make multi-material fabrication more accessible for
+                    educational and research robotics.</p>
+                <p>The example model pictured shows a 3D printed robot joint with an embedded servo motor. To create this part, a
+                    simple model was first created that represented the desired shape and position of the robot body and motor.
+                    VoxelFuse was then used to process the input model to generate clearances around the motor and export the
+                    modified model for slicing. After slicing the model and generating printer g-code, VoxelFuse was used to
+                    determine the layer at which the print needed to be paused to insert the motor, and then to modify the g-code
+                    accordingly. While printing, two colors of plastic were used to illustrate where this insertion step occured.</p>
+                <p>More information and source code is available in the project's <a href="https://github.com/cdbrauer/VoxelFuse" target="_blank">GitHub repository</a>.
+                    For more information on the underlying framework and example applications, see the papers on my
+                    <a href="https://scholar.google.com/citations?user=VJ-As98AAAAJ&hl=en" target="_blank">Google Scholar Profile</a>.</p>
+            </div>
+            <div class="grid-cell-full grid-cell-third-desktop">
+                <img src="voxel-joint.png" alt="3d printed robot joint">
+            </div>
+            <hr/>
+        </section>
+        <section class="grid" id="dreamslab">
+            <div class="grid-cell-full">
+                <h3>DREAMS Lab</h3>
+            </div>
+            <div class="grid-cell-full" id="earthpod">
+                <h5>EarthPod</h5>
+                <p>This project is investigating the design of sensor pods to support rapidly deploying environmental
+                    sensors using small unmanned aerial vehicles. Currently, two pod designs are in development: The EarthPod,
+                    which has a larger sensor capacity and support for folding solar panels, and the EarthPod Mini, which can
+                    be dropped from the air and uses autorotation to slow its descent. Methods of releasing and retrieving
+                    these pods are also in development, including systems based on electropermanent magnets and twist-release
+                    magnets.</p>
+                <p>I am leading the design of the pods and release systems for this project.</p>
+            </div>
+            <div class="grid-cell-full grid-cell-half-desktop">
+                <img src="earthpod-1.jpg" alt="large sensor pod">
+            </div>
+            <div class="grid-cell-full grid-cell-half-desktop">
+                <img src="earthpod-2.jpg" alt="small 3d printed sensor pod">
+            </div>
+            <div class="grid-cell-full" id="udrone">
+                <h5>uDrone</h5>
+                <p>This project is creating an autonomous underwater robot based on a drone flight stack. Its primary goals
+                    are inspection and mapping of coral reefs.</p>
+                <p>I assisted with the design and fabrication of the internal structure and sensor mounting hardware.</p>
+            </div>
+            <div class="grid-cell-full grid-cell-half-desktop">
+                <img src="udrone-1.jpg" alt="underwater robot side view">
+            </div>
+            <div class="grid-cell-full grid-cell-half-desktop">
+                <img src="udrone-2.jpg" alt="underwater robot front view">
+            </div>
+            <hr/>
+        </section>
     </div>
-    <div class="grid-cell-full grid-cell-twothirds-desktop">
-        <h5>VoxelFuse</h5>
-        <p>This project seeks to provide methods and set of tools for processing, modifying, and generating 3D models
-            that use multiple materials and fabrication processes. Areas of research include planning of fabrication
-            steps, automatic part modification, optimization of component properties, and generation of the files and
-            fixtures needed to produce multi-material parts. Implementation of these algorithms is done in Python using
-            a voxel-based model representation. This work will make multi-material fabrication more accessible for
-            educational and research robotics.</p>
-        <p>The example model pictured shows a 3D printed robot joint with an embedded servo motor. To create this part, a
-            simple model was first created that represented the desired shape and position of the robot body and motor.
-            VoxelFuse was then used to process the input model to generate clearances around the motor and export the
-            modified model for slicing. After slicing the model and generating printer g-code, VoxelFuse was used to
-            determine the layer at which the print needed to be paused to insert the motor, and then to modify the g-code
-            accordingly. While printing, two colors of plastic were used to illustrate where this insertion step occured.</p>
-        <p>More information and source code is available in the project's <a href="https://github.com/cdbrauer/VoxelFuse" target="_blank">GitHub repository</a>.
-            For more information on the underlying framework and example applications, see the papers on my
-            <a href="https://scholar.google.com/citations?user=VJ-As98AAAAJ&hl=en" target="_blank">Google Scholar Profile</a>.</p>
-    </div>
-    <div class="grid-cell-full grid-cell-third-desktop">
-        <img src="voxel-joint.png" alt="3d printed robot joint">
-    </div>
-    <hr/>
-</section>
-<section class="grid" id="dreamslab">
-    <div class="grid-cell-full">
-        <h3>DREAMS Lab</h3>
-    </div>
-    <div class="grid-cell-full">
-        <h5>EarthPod</h5>
-        <p>This project is investigating the design of sensor pods to support rapidly deploying environmental
-            sensors using small unmanned aerial vehicles. Currently, two pod designs are in development: The EarthPod,
-            which has a larger sensor capacity and support for folding solar panels, and the EarthPod Mini, which can
-            be dropped from the air and uses autorotation to slow its descent. Methods of releasing and retrieving
-            these pods are also in development, including systems based on electropermanent magnets and twist-release
-            magnets.</p>
-        <p>I am leading the design of the pods and release systems for this project.</p>
-    </div>
-    <div class="grid-cell-full grid-cell-half-desktop">
-        <img src="earthpod-1.jpg" alt="large sensor pod">
-    </div>
-    <div class="grid-cell-full grid-cell-half-desktop">
-        <img src="earthpod-2.jpg" alt="small 3d printed sensor pod">
-    </div>
-    <div class="grid-cell-full">
-        <h5>uDrone</h5>
-        <p>This project is creating an autonomous underwater robot based on a drone flight stack. Its primary goals
-            are inspection and mapping of coral reefs.</p>
-        <p>I assisted with the design and fabrication of the internal structure and sensor mounting hardware.</p>
-    </div>
-    <div class="grid-cell-full grid-cell-half-desktop">
-        <img src="udrone-1.jpg" alt="underwater robot side view">
-    </div>
-    <div class="grid-cell-full grid-cell-half-desktop">
-        <img src="udrone-2.jpg" alt="underwater robot front view">
-    </div>
-    <hr/>
-</section>
+    <div>&nbsp;</div> <!--Right column-->
+</div>
 <footer>
     <a href="https://scholar.google.com/citations?user=VJ-As98AAAAJ&hl=en" class="social-icon" title="Google Scholar" target="_blank"><i class="fas fa-graduation-cap"></i></a>
     <a href="https://github.com/cdbrauer" class="social-icon" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>

@@ -122,6 +122,11 @@ nav {
     z-index: 3;
 }
 
+nav .icon-spacer{
+    display: inline-block;
+    width: var(--navbar-margin);
+}
+
 #menu-close{
     display: none;
 }
@@ -145,6 +150,40 @@ nav {
 #main-menu .social-icon{
     display: inline-block;
     padding: calc(1 * var(--navbar-margin)) calc(0.5 * var(--base-font));
+}
+
+#sidebar-container{
+    position: relative;
+}
+
+#sidebar{
+    width: max-content;
+    position: relative;
+    top: 0;
+    padding: calc(2 * var(--grid-padding));
+    z-index: 4;
+    box-shadow: var(--button-shadow);
+}
+
+#sidebar ul{
+    text-align: left;
+    font-size: calc(1 * var(--base-font));
+    font-weight: lighter;
+    line-height: 150%;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+#sidebar h1, #sidebar h2, #sidebar h3, #sidebar h4, #sidebar h5{
+    padding-bottom: 0;
+}
+
+#sidebar > ul > li{
+    padding-top: calc(0.5 * var(--base-font));
+}
+
+#sidebar ul > li > ul{
+    padding-left: calc(1.5 * var(--base-font));
 }
 
 section{
