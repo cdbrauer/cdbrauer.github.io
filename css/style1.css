@@ -92,6 +92,14 @@ h5{
     padding-bottom: calc(0.5 * var(--base-font));
 }
 
+h6{
+    text-align: left;
+    font-size: calc(1 * var(--base-font));
+    line-height: 150%;
+    font-weight: bolder;
+    padding-bottom: calc(0.5 * var(--base-font));
+}
+
 a{
     color: var(--color-fg);
     text-decoration: none;
