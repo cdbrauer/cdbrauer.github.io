@@ -114,7 +114,7 @@ p{
     padding-bottom: calc(0.5 * var(--base-font));
 }
 
-.center-align{
+.align-center{
     text-align: center;
 }
 
@@ -347,6 +347,10 @@ img{
         --navbar-margin: 25px;
 
         --corners: 10px;
+    }
+
+    .grid{
+        width: 60%;
     }
 
     .grid-cell-full-desktop{grid-column: span 12; display: inline-block;}
